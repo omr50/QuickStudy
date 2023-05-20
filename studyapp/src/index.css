@@ -1,0 +1,369 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.homepage {
+  color: #444444;
+  height: calc(100vh); /* Subtract height of nav and footer */
+}
+
+.homepage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.homepage-title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.flashcard-title {
+  font-size: 3rem;
+  text-align: center;
+}
+.homepage-description {
+  font-size: 2rem;
+  text-align: center;
+  max-width: 800px;
+}
+
+.homepage-button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-login-button {
+  background-color: #2159f4 !important;
+  color: #ffffff !important;
+  border: none;
+  margin-right: 10px;
+  transition: transform 3s 3s;
+  border: none !important;
+}
+
+.homepage-login-button:hover {
+  background-color: #ffffff !important;
+  color: #866fce !important;
+}
+
+.homepage-signup-button {
+  border: none !important;
+  background-color: #ff5722 !important;
+}
+
+.homepage-signup-button:hover {
+  color: #ff7043 !important;
+  background-color: #ffffff !important;
+}
+
+.homepage-todo-button {
+  background-color: #7db01e !important;
+  border: none !important;
+  margin-right: 10px;
+}
+
+.homepage-todo-button:hover {
+  color: #7db01e !important;
+  background-color: #ffffff !important;
+}
+
+.homepage-flashcard-button {
+  background-color: #000000 !important;
+  border: none !important;
+  margin-right: 10px;
+}
+
+.homepage-flashcard-button:hover {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+
+.custom-cards {
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.14) 0px 2px 4px -1px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  margin: 20px;
+  width: 40%;
+  background-color: white !important;
+}
+
+.custom-cards .card-header {
+  background-color: #e97f34;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+}
+.custom-cards:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  background-color: rgb(253, 249, 249) !important;
+
+}
+
+.custom-cards .card-body {
+  padding: 20px;
+}
+
+.custom-cards .card-title {
+  color: #008080;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.custom-cards .card-text {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.custom-cards .btn-primary {
+  background-color: #008080;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-cards .btn-primary:hover {
+  background-color: #007373;
+}
+
+
+
+
+/* flash card set cards */
+.cardset-container {
+  display: flex;
+  justify-content: center !important;
+  text-align: center !important;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.custom-card {
+  background-color: #f8f9fa;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  min-width: 500px !important;
+  max-height: 200px;
+  margin: 20px;
+}
+.custom-card2 {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.custom-card3 {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.custom-header {
+  background-color: white !important;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* Center title */
+}
+
+.card-text {
+  font-size: 20px; /* Enlarge text font size */
+  margin-bottom: 0;
+  text-align: center; /* Center text */
+  font-weight: 500;
+}
+
+
+.edit-card {
+  width: fit-content !important;
+}
+
+
+
+#x-button {
+  color: black !important; 
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+#x-button:hover {
+  color: white !important;
+  background-color:firebrick;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+#edit-button {
+  color: black !important; 
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+#edit-button:hover {
+  color: white !important;
+  background-color:#007373;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+
+.nav-link2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.nav-link2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-link2:hover::before {
+  width: 100%;
+}
+
+.front-container {
+  margin-top: 10px !important;
+}
+
+.navcolor {
+  color: #4255ff !important;
+}
+
+.p-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.circular-button:hover {
+  transform: scale(1.06);
+  color: rgb(255, 255, 255);
+  background-color: rgb(94, 195, 51);
+}
+
+
+.front-card {
+  /* Set initial box shadow */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  /* Set initial transition */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.front-card:hover {
+  /* Increase box shadow on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* Scale up and rotate slightly on hover */
+  transform: scale(1.01);
+  /* Change cursor to pointer on hover */
+  cursor: pointer;
+}
+
+@keyframes scaling {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+.hover-btn {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  transform: scale(0); /* start with 0 scale */
+  animation: scaling 2s ease-in-out infinite;
+  cursor: pointer;
+}
+
+
+.arrow {
+  /* Set initial box shadow */
+  /* Set initial transition */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.arrow:hover {
+  /* Increase box shadow on hover */
+  color:#9da7bc;
+  transform: scale(1.2);
+  cursor: pointer;
+}

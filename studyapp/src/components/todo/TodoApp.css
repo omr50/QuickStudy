@@ -1,0 +1,41 @@
+label, input, button {
+    margin: 10px;
+    padding: 5px;
+}
+
+.footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+}
+
+.my-navbar {
+    background-color: #20232a;
+    color: white;
+  }
+  
+  .my-navbar .navbar-brand {
+    color: white;
+  }
+  
+  .my-navbar .nav-link {
+    color: white;
+  }
+  
+  .my-navbar .nav-link:hover {
+    color: #ffc107;
+  }
+  
+  .auth-buttons {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+  }
+
+  @media (max-width: 991px) {
+    .auth-buttons{
+        position: relative;
+    }
+  }
